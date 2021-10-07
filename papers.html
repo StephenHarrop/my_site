@@ -1,0 +1,72 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  color: black;
+  cursor: pointer;
+  width: 10%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+
+<body>
+
+<p style="color:#003399;font-size:22px;font-weight:bold;text-align:left;">Papers</p>
+
+<strong>Published (newest to oldest):</strong>
+
+<p>
+<ul>
+1. "Thomas Reid on Induction and Natural Kinds." <i>Journal of Scottish Philosophy</i> (forthcoming) <button class="collapsible">[abstract]</button>
+<div class="content">
+  <p>I examine the views of Thomas Reid with respect to a certain version of the problem of induction: Why are inductions using natural kinds successful, and what justifies them? I argue that while both Reid holds a kind of conventionalist view about natural kinds, this conventionalism has a realistic component which allows him to answer both questions.
+</p>
+</div>
+</ul>
+</p>
+
+<p>
+<ul>
+2. "On Some Leibnizian Arguments for the Principle of Sufficient Reason." <i>History of Philosophy Quarterly</i> 37 (2): 143-162. 2020.
+<button class="collapsible">[abstract]</button>
+<div class="content">
+  <p>Leibniz often refers to the Principle of Sufficient Reason (PSR) as something like a first principle. In some texts, however, he attempts to give positive arguments in its favor. I examine two such arguments, and find them wanting. The first argument has two defects. First, it is question-begging; and second, when the question-begging step is excised, the principle one can in fact derive is highly counter-intuitive. The second argument is valid, but has the defect of only reaching a nearly trivial conclusion.
+
+</p>
+</div>
+<ul>
+</p>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+</body>
