@@ -1,6 +1,28 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  background-color: #ddd;
+  border: none;
+  box-shadow: 3px 3px 4px black;
+  cursor: none;
+}
+
+details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: #ddd;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
+
+details[open] > summary {
+  background-color: #ccf;
+} 
+  
 .collapsible {
   color: black;
   cursor: pointer;
@@ -31,7 +53,7 @@ margin:100px;
 
 <style>
 body {
-  font-family: Garamond, serif;
+  font-family: Garamond, serif; display: block;
 }
 </style>
 
@@ -51,8 +73,7 @@ body {
 <p>
 <ul>
 
-1. "LeMans and <i>Proslogion</i> 15" <i>Analysis</i>. Forthcoming. <a href="https://philpapers.org/archive/HARLA_-18.pdf">[online first version]</a> <details>
-  
+1. "LeMans and <i>Proslogion</i> 15" <i>Analysis</i>. Forthcoming. <a href="https://philpapers.org/archive/HARLA_-18.pdf">[online first version]</a><details>
   <summary>
    Abstract
   </summary>
