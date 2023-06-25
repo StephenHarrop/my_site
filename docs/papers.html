@@ -51,23 +51,6 @@ body {
 </head>
 
 <body>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
   
 <div class="white-div">
 
@@ -179,7 +162,23 @@ for (i = 0; i < coll.length; i++) {
       5. "Henry Oldenburg," in <i>the Cambridge Spinoza Lexicon</i> (Karolina Hu&#776;bner and Justin Steinberg eds.), Cambridge University Press <a href="https://philpapers.org/archive/HARHOY.pdf">[final draft]</a>
         </ul>
       </p>
+  
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
 
 </div>
 
