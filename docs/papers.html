@@ -52,6 +52,23 @@ body {
 
 <body>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+  
 <div class="white-div">
 
 <p style="color:#003399;font-size:22px;font-weight:bold;text-align:left;"><a href="https://stephenharrop.github.io/my_site/">Stephen Harrop</a> > Publications</p>
@@ -145,40 +162,23 @@ body {
     <p>
       <ul>
 
-      3. "Robert Boyle," in <i>the Cambridge Spinoza Lexicon</i> (Karolina Hu&#776;bner and Justin Steinberg eds.), Cambridge University Press
+      3. "Robert Boyle," in <i>the Cambridge Spinoza Lexicon</i> (Karolina Hu&#776;bner and Justin Steinberg eds.), Cambridge University Press <a href="https://philpapers.org/archive/HARRBM.pdf">[final draft]</a>
       </ul>
     </p>
 
      <p>
         <ul>
 
-      4. "Georg Hermann Schuler," in <i>the Cambridge Spinoza Lexicon</i> (Karolina Hu&#776;bner and Justin Steinberg eds.), Cambridge University Press
+      4. "Georg Hermann Schuler," in <i>the Cambridge Spinoza Lexicon</i> (Karolina Hu&#776;bner and Justin Steinberg eds.), Cambridge University Press <a href="https://philpapers.org/archive/HARGHS.pdf">[final draft]</a>
         </ul>
       </p>
 
       <p>
         <ul>
 
-      5. "Henry Oldenburg," in <i>the Cambridge Spinoza Lexicon</i> (Karolina Hu&#776;bner and Justin Steinberg eds.), Cambridge University Press
+      5. "Henry Oldenburg," in <i>the Cambridge Spinoza Lexicon</i> (Karolina Hu&#776;bner and Justin Steinberg eds.), Cambridge University Press <a href="https://philpapers.org/archive/HARHOY.pdf">[final draft]</a>
         </ul>
       </p>
-  
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-</script>
 
 
 </div>
