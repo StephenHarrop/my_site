@@ -32,6 +32,10 @@ color:blue;
     background-color: #474747;
 }
 
+{
+        box-sizing: border-box;
+  }
+
 .column {
     float: left;
     width: 50%;
@@ -57,6 +61,12 @@ color:blue;
 
     .right {
     width: 25%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
     }
 
 </style>
