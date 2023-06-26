@@ -1,12 +1,32 @@
 <style>
 .white-div {
 background-color:white;
-width: 500px;
+max-width: 500px;
 padding: 25px;
 border: 5px solid black;
 margin:100px;
 }
+
+#nav {
+width:150px;
+list-style:none;
+}
+#nav a {
+color:black;
+text-decoration:none;
+}
+#nav a:active, #nav a:focus, #nav a:hover {
+color:red; 
+}
+#nav #current {
+color:red; 
+}
+#nav #current:active, #nav #current:focus, #nav #current:hover {
+color:blue;	
+}
 </style>
+
+
 
 <style>
 body {
@@ -27,8 +47,11 @@ body {
 
 <p style=”color:#000;font-weight:normal;text-align:left;”>
 
+  
 <p><a href="https://stephenharrop.github.io/my_site/"><strong>Home<strong></a></p>
 
+<p><a href="https://stephenharrop.github.io/about/" id=current><strong>About<strong></a></p>
+  
 <p><a href="https://stephenharrop.github.io/my_site/mywork.html"><strong>Research<strong></a></p>
 
 <p><a href="https://stephenharrop.github.io/my_site/papers.html"><strong>Publications<strong></a></p>
