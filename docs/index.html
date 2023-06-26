@@ -32,20 +32,17 @@ color:blue;
     background-color: #474747;
 }
 
-#outer{
-  background-color:white;    
-  width:33vw;  
-  margin:0;
-  padding-top:1px;
-  height:100vh;
-}
+.column {
+    float: left;
+    width: 50%;
+    }
 
-#box {
-    width: 100px;
-    padding: 25px
-    border: 5px solid black;
-    margin:100px;
-}
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
 </style>
 
 <style>
@@ -70,19 +67,23 @@ body {
 </div>
 
 <div class="white-div">
-
-  <ul id="nav">
-
-    <p><a href="https://stephenharrop.github.io/my_site/" id="current"><strong>Home<strong></a></p>
   
-    <p><a href="https://stephenharrop.github.io/my_site/about.html"><strong>About<strong></a></p>
-        
-    <p><a href="https://stephenharrop.github.io/my_site/mywork.html"><strong>Research<strong></a></p>
-      
-    <p><a href="https://stephenharrop.github.io/my_site/papers.html"><strong>Publications<strong></a></p>
-  
-   </ul> 
-
+<ul id="nav">
+<div class="row">
+    <div class="column" style="background-color:white: ;;">
+        <h2><a href="https://stephenharrop.github.io/my_site/" id="current"><strong>Home<strong></a></h2>
+    </div>
+    <div class="column" style="background-color:white;">
+        <h2><a href="https://stephenharrop.github.io/my_site/about.html"><strong>About<strong></a></h2>
+    </div>
+    <div class="column" style="background-color:white;">
+      <h2><a href="https://stephenharrop.github.io/my_site/mywork.html"><strong>Research<strong></a></h2>
+    </div>
+    <div class="column" style="background-color:white;">
+      <h2><a href="https://stephenharrop.github.io/my_site/papers.html"><strong>Publications<strong></a></h2>
+    </div>
+</div>
+</ul> 
 
 </div>
 
