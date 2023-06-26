@@ -7,6 +7,24 @@ padding: 25px;
 border: 5px solid black;
 margin:100px;
 }
+
+#nav {
+width:150px;
+list-style:none;
+}
+#nav a {
+color:black;
+text-decoration:none;
+}
+#nav a:active, #nav a:focus, #nav a:hover {
+color:red; 
+}
+#nav #current {
+color:red; 
+}
+#nav #current:active, #nav #current:focus, #nav #current:hover {
+color:blue;	
+}
 </style>
 
 <style>
@@ -27,13 +45,16 @@ body {
 <p style=”color:#000;font-weight:normal;word-wrap: break-word”>You can email me at stephen[dot]d[dot]harrop[at]gmail.com. Alternate methods of communication (sempahore, telegram, astral projection, etc) are welcome, but I cannot guarantee receipt of message.</p>
 
 <p style=”color:#000;font-weight:normal;text-align:left;”>
+  
+  <ul id="nav">
 
-  <p><a href="https://stephenharrop.github.io/my_site/" id="current"><strong>Home<strong></a></p>
-
+    <p><a href="https://stephenharrop.github.io/my_site/" id="current"><strong>Home<strong></a></p>
+  
     <p><a href="https://stephenharrop.github.io/my_site/about.html"><strong>About<strong></a></p>
-      
+        
     <p><a href="https://stephenharrop.github.io/my_site/mywork.html"><strong>Research<strong></a></p>
-    
+      
     <p><a href="https://stephenharrop.github.io/my_site/papers.html"><strong>Publications<strong></a></p>
-
+  
+   </ul> 
 </div>
