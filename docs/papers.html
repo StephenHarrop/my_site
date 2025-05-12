@@ -19,6 +19,62 @@
   transition: max-height 0.2s ease-out;
 }
 
+
+
+
+#nav {
+width:150px;
+list-style:none;
+}
+#nav a {
+color:black;
+text-decoration:none;
+}
+#nav a:active, #nav a:focus, #nav a:hover {
+color:red; 
+}
+#nav #current {
+color:red; 
+}
+#nav #current:active, #nav #current:focus, #nav #current:hover {
+color:blue;	
+}
+
+#side {
+    width: 33.33%;
+    height: 1000px;
+    background-color: #474747;
+}
+
+{
+        box-sizing: border-box;
+  }
+
+
+    .left {
+    width: 25%;
+    }
+
+    .middle-left{
+    width: 25%;
+    }
+    
+    .middle-right{
+    width: 25%;
+    }
+
+    .right {
+    width: 25%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+
+  
  .column {
   float: right;
   padding: 15px;
@@ -106,7 +162,7 @@ body {
 </head>
 
 
-<div class="column"
+<div class="column" side="middle-left"
 >
   
 <p style="font-size:20px;font-weight:bold;text-align:left;">Book Chapters</p>
